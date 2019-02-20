@@ -63,5 +63,12 @@ html, body {
 
 //Colors
 @mariner: #2A83C;
-@font-stack: Arial, sans-serif;
+@font-stack: Arial, "sans-serif";
 
+@custom-layout(@j, @a) {
+	display: flex;
+	justify-content: @j;
+	align-items: @a;
+}
+
+@mobile: (max-width: 500px);
