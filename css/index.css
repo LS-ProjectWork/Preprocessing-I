@@ -184,3 +184,31 @@ header button {
   cursor: pointer;
   background: #2072C5;
 }
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
+.main-content section {
+  margin: 20px 2.5%;
+  width: 45%;
+}
+.main-content h2 {
+  font-size: 2rem;
+}
+.main-content table {
+  border: 1px solid black;
+  margin: 2rem;
+}
+.main-content td {
+  border: 1px solid black;
+  padding: 2rem;
+}
+.main-content .intro p {
+  margin: 2rem 0;
+}

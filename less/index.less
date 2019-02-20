@@ -89,11 +89,9 @@ html, body {
 }
 
 header {
-	// .custom-layout(flex-start, center);
 	border: 1px solid black;
 	height: 27.5rem;
 	margin: 2rem;
-	// background: @main-color;
 
 	h1 {
 		display: flex;
@@ -127,6 +125,39 @@ header {
 		height: 3rem;
 		cursor: pointer;
 		background: @main-color;
+	}
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.6rem;
+
+	@media @mobile {
+		flex-direction: column;
+	}
+
+	section {
+		margin: 20px 2.5%;
+		width: 45%;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	table {
+		border: 1px solid black;
+		margin: 2rem;
+	}
+
+	td {
+		border: 1px solid black;
+		padding: 2rem;
+	}
+
+	.intro p {
+		margin: 2rem 0;
 	}
 }
 
