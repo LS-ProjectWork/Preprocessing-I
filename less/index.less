@@ -54,12 +54,13 @@ table {
 }
 
 html, body {
-    height: 100%;
+	font-size: 62.5%;
+	height: 100%;
+	font-family: @font-stack;
 }
 
 //Variables
 @main-color: @mariner;
-@main-font: @standard;
 
 //Colors
 @mariner: #2A83C;
@@ -72,3 +73,9 @@ html, body {
 }
 
 @mobile: (max-width: 500px);
+
+.container {
+	max-width: 1040px;
+	margin: 0 auto;
+	font-size: 1.6rem;
+}
