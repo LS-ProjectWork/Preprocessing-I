@@ -66,7 +66,7 @@ html, body {
 @mariner: #2A83C;
 @font-stack: Arial, "sans-serif";
 
-@custom-layout(@j, @a) {
+.custom-layout(@j, @a) {
 	display: flex;
 	justify-content: @j;
 	align-items: @a;
@@ -79,3 +79,12 @@ html, body {
 	margin: 0 auto;
 	font-size: 1.6rem;
 }
+
+.nav-bar {
+	.custom-layout(flex-end, flex-start);
+
+	a {
+	margin: 20px;
+	}
+}
+
