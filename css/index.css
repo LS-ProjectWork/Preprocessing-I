@@ -153,7 +153,6 @@ header {
   border: 1px solid black;
   height: 27.5rem;
   margin: 2rem;
-  background: #2072C5;
 }
 header h1 {
   display: flex;
@@ -172,4 +171,16 @@ header .top-content p {
 header .bottom-content p {
   margin: auto 2rem;
   padding-bottom: 1.5rem;
+}
+header .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header button {
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  background: #2072C5;
 }

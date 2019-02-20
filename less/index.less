@@ -93,7 +93,7 @@ header {
 	border: 1px solid black;
 	height: 27.5rem;
 	margin: 2rem;
-	background: @main-color;
+	// background: @main-color;
 
 	h1 {
 		display: flex;
@@ -114,6 +114,19 @@ header {
 	.bottom-content p {
 		margin: auto 2rem;
 		padding-bottom: 1.5rem;
+	}
+
+	.button-container {
+		.custom-layout(center, center);
+		
+	}
+
+	button {
+		border-radius: 0.5rem;
+		width: 10rem;
+		height: 3rem;
+		cursor: pointer;
+		background: @main-color;
 	}
 }
 
