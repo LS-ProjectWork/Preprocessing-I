@@ -63,7 +63,7 @@ html, body {
 @main-color: @mariner;
 
 //Colors
-@mariner: #2A83C;
+@mariner: #2072C5;
 @font-stack: Arial, "sans-serif";
 
 .custom-layout(@j, @a) {
@@ -84,7 +84,36 @@ html, body {
 	.custom-layout(flex-end, flex-start);
 
 	a {
-	margin: 20px;
+	margin: 2rem;
+	}
+}
+
+header {
+	// .custom-layout(flex-start, center);
+	border: 1px solid black;
+	height: 27.5rem;
+	margin: 2rem;
+	background: @main-color;
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 5rem;
+		font-size: 3rem;
+	}
+
+	.top-content p {
+		display: flex;
+		align-items: center;
+		border-bottom: 1px dashed red;
+		margin: 2rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.bottom-content p {
+		margin: auto 2rem;
+		padding-bottom: 1.5rem;
 	}
 }
 

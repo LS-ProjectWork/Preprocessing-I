@@ -147,5 +147,29 @@ body {
   align-items: flex-start;
 }
 .nav-bar a {
-  margin: 20px;
+  margin: 2rem;
+}
+header {
+  border: 1px solid black;
+  height: 27.5rem;
+  margin: 2rem;
+  background: #2072C5;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  font-size: 3rem;
+}
+header .top-content p {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed red;
+  margin: 2rem;
+  padding-bottom: 1.5rem;
+}
+header .bottom-content p {
+  margin: auto 2rem;
+  padding-bottom: 1.5rem;
 }
