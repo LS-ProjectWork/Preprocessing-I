@@ -54,6 +54,142 @@ table {
 }
 
 html, body {
-    height: 100%;
+	font-size: 62.5%;
+	height: 100%;
+	font-family: @font-stack;
 }
 
+//Variables
+@main-color: @mariner;
+
+//Colors
+@mariner: #2072C5;
+@font-stack: Arial, "sans-serif";
+
+.custom-layout(@j, @a) {
+	display: flex;
+	justify-content: @j;
+	align-items: @a;
+}
+
+@mobile: (max-width: 500px);
+
+.container {
+	max-width: 1040px;
+	margin: 0 auto;
+	font-size: 1.6rem;
+}
+
+.nav-bar {
+	.custom-layout(flex-end, flex-start);
+
+	a {
+	margin: 2rem;
+	}
+}
+
+header {
+	border: 1px solid black;
+	height: 27.5rem;
+	margin: 2rem;
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 5rem;
+		font-size: 3rem;
+	}
+
+	.top-content p {
+		display: flex;
+		align-items: center;
+		border-bottom: 1px dashed red;
+		margin: 2rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.bottom-content p {
+		margin: auto 2rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.button-container {
+		.custom-layout(center, center);
+		
+	}
+
+	button {
+		border-radius: 0.5rem;
+		width: 10rem;
+		height: 3rem;
+		cursor: pointer;
+		background: @main-color;
+	}
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.6rem;
+
+	@media @mobile {
+		flex-direction: column;
+	}
+
+	section {
+		margin: 20px 2.5%;
+		width: 45%;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	table {
+		border: 1px solid black;
+		margin: 2rem;
+	}
+
+	td {
+		border: 1px solid black;
+		padding: 2rem;
+	}
+
+	.intro p {
+		margin: 2rem 0;
+	}
+}
+
+.work-container {
+	width: 100%;
+
+	h2 {
+		margin: 2rem;
+	}
+}
+
+.work-history {
+	display: flex;
+	width: 100%;
+
+	table {
+		margin: 2rem;
+		display: flex;
+		width: 100%;
+	}
+
+	th {
+		border: 1px solid black;
+		align-items: center;
+		padding: 2rem;
+	}
+
+	td {
+		border: 1px solid black;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+	}
+
+}
